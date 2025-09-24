@@ -17,9 +17,6 @@ struct ContentView: View {
                     Button("Cut", action: { print("Cut")})
                     Button("Copy", action: { print("Copy")})
                         Button("Paste", action: { print("Paste")})
-                }, preview: {
-                    // Une vue de preview optionnelle
-                    Text("Aperçu")
                 })
             Button("Sign In") {
                 print("KK")
