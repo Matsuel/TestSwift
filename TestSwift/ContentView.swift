@@ -13,7 +13,17 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .contextMenu(menuItems: {
+                    Button("Cut", action: { print("Cut")})
+                    Button("Copy", action: { print("Copy")})
+                        Button("Paste", action: { print("Paste")})
+                }, preview: {
+                    // Une vue de preview optionnelle
+                    Text("Aperçu")
+                })
+            Button("Sign In") {
+                print("KK")
+            }
         }
         .padding()
     }
